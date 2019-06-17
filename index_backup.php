@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 require_once("vendor/autoload.php");
 
@@ -45,20 +45,22 @@ $app->post('/admin/login', function() {
     User::login($_POST["login"], $_POST["password"]);
 
     header("Location: /admin");
+
     exit;
 
 });
 
-$app->get('/admin/logout', function() {
-
+$app->get('/admin/logout', function()
+{
     User::logout();
 
     header("Location: /admin/login");
     exit;
 
+
 });
 
-$app->get("/admin/users", function() {
+$app->get('/admin/users', function(){
 
     User::verifyLogin();
 
@@ -72,7 +74,7 @@ $app->get("/admin/users", function() {
 
 });
 
-$app->get("/admin/users/create", function() {
+$app->get('/admin/users/create', function(){
 
     User::verifyLogin();
 
@@ -82,8 +84,8 @@ $app->get("/admin/users/create", function() {
 
 });
 
-$app->get("/admin/users/:iduser/delete", function($iduser) {
-
+$app->get('/admin/users/:iduser/delete', function($iduser)
+{
     User::verifyLogin();
 
     $user = new User();
@@ -93,11 +95,12 @@ $app->get("/admin/users/:iduser/delete", function($iduser) {
     $user->delete();
 
     header("Location: /admin/users");
+
     exit;
 
 });
 
-$app->get("/admin/users/:iduser", function($iduser) {
+$app->get('/admin/users/:iduser', function($iduser){
 
     User::verifyLogin();
 
@@ -113,7 +116,7 @@ $app->get("/admin/users/:iduser", function($iduser) {
 
 });
 
-$app->post("/admin/users/create", function() {
+$app->post('/admin/users/create', function(){
 
     User::verifyLogin();
 
@@ -126,12 +129,14 @@ $app->post("/admin/users/create", function() {
     $user->save();
 
     header("Location: /admin/users");
+
     exit;
+
 
 });
 
-$app->post("/admin/users/:iduser", function($iduser) {
-
+$app->post('/admin/users/:iduser', function($iduser)
+{
     User::verifyLogin();
 
     $user = new User();
@@ -145,12 +150,14 @@ $app->post("/admin/users/:iduser", function($iduser) {
     $user->update();
 
     header("Location: /admin/users");
+
     exit;
+
 
 });
 
-$app->get("/admin/forgot", function() {
-
+$app->get("/admin/forgot", function()
+{
     $page = new PageAdmin([
         "header"=>false,
         "footer"=>false
@@ -158,19 +165,21 @@ $app->get("/admin/forgot", function() {
 
     $page->setTpl("forgot");
 
+
 });
 
-$app->post("/admin/forgot", function(){
-
+$app->post("/admin/forgot", function()
+{
     $user = User::getForgot($_POST["email"]);
 
     header("Location: /admin/forgot/sent");
+
     exit;
 
 });
 
-$app->get("/admin/forgot/sent", function(){
-
+$app->get("/admin/forgot/sent", function()
+{
     $page = new PageAdmin([
         "header"=>false,
         "footer"=>false
@@ -178,10 +187,12 @@ $app->get("/admin/forgot/sent", function(){
 
     $page->setTpl("forgot-sent");
 
+
 });
 
-$app->get("/admin/forgot/reset", function(){
 
+$app->get("/admin/forgot/reset", function()
+{
     $user = User::validForgotDecrypt($_GET["code"]);
 
     $page = new PageAdmin([
@@ -194,10 +205,11 @@ $app->get("/admin/forgot/reset", function(){
         "code"=>$_GET["code"]
     ));
 
+
 });
 
-$app->post("/admin/forgot/reset", function(){
-
+$app->post("/admin/forgot/reset", function()
+{
     $forgot = User::validForgotDecrypt($_POST["code"]);
 
     User::setFogotUsed($forgot["idrecovery"]);
@@ -219,8 +231,10 @@ $app->post("/admin/forgot/reset", function(){
 
     $page->setTpl("forgot-reset-success");
 
+
 });
+
 
 $app->run();
 
-?>
+ ?>
