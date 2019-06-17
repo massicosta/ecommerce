@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d16738ba-197c-48e4-b80e-1f87ac799bef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index_backup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/header.b18aae8b7bfe6bd31c1fe7cf29d9e8b3.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/header.b18aae8b7bfe6bd31c1fe7cf29d9e8b3.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,25 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/DB/Sql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index_backup.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="202" column="37" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="37" />
+            <state relative-caret-position="501">
+              <caret line="288" column="24" selection-start-line="288" selection-start-column="24" selection-end-line="288" selection-end-column="24" />
               <folding>
                 <element signature="e#61#76#0#PHP" expanded="true" />
               </folding>
@@ -61,10 +48,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/categories-update.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/categories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="258" column="19" selection-start-line="258" selection-start-column="19" selection-end-line="258" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+              <folding>
+                <element signature="e#29#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+            <state relative-caret-position="416">
+              <caret line="64" column="36" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="64" selection-end-column="36" />
               <folding>
                 <element signature="e#29#47#0#PHP" expanded="true" />
               </folding>
@@ -84,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="697">
+              <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -132,8 +158,6 @@
         <option value="$PROJECT_DIR$/views/admin/footer.html" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/pageAdmin.php" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/Model/User.php" />
-        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" />
-        <option value="$PROJECT_DIR$/views/admin/header.html" />
         <option value="$PROJECT_DIR$/views/admin/users-create.html" />
         <option value="$PROJECT_DIR$/views/admin/users.html" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/page.php" />
@@ -141,6 +165,10 @@
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User_backup.php" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php" />
         <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" />
+        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category_Backup.php" />
+        <option value="$PROJECT_DIR$/views/admin/header.html" />
+        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" />
+        <option value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -224,7 +252,13 @@
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="views-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,7 +272,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -253,9 +287,9 @@
       <recent name="C:\ecommerce\vendor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ecommerce\vendor\hcodebr\php-classes\src\Model" />
       <recent name="C:\ecommerce" />
       <recent name="C:\ecommerce\vendor\hcodebr\php-classes\src" />
-      <recent name="C:\ecommerce\vendor\hcodebr\php-classes\src\Model" />
       <recent name="C:\ecommerce\views\admin" />
     </key>
   </component>
@@ -282,12 +316,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560281987359</updated>
       <workItem from="1560281988445" duration="42831000" />
-      <workItem from="1560514228965" duration="24953000" />
+      <workItem from="1560514228965" duration="30832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67784000" />
+    <option name="totallyTimeSpent" value="73663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -442,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="258" column="79" selection-start-line="258" selection-start-column="79" selection-end-line="258" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/users-create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -488,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User_backup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -512,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -533,20 +546,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
-          <folding>
-            <element signature="e#29#47#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_backup.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category_Backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#29#47#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,13 +573,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_backup.php">
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="258" column="19" selection-start-line="258" selection-start-column="19" selection-end-line="258" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="64" column="36" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="64" selection-end-column="36" />
+          <folding>
+            <element signature="e#29#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="e#29#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/categories-update.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="202" column="37" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="37" />
+        <state relative-caret-position="501">
+          <caret line="288" column="24" selection-start-line="288" selection-start-column="24" selection-end-line="288" selection-end-column="24" />
           <folding>
             <element signature="e#61#76#0#PHP" expanded="true" />
           </folding>
