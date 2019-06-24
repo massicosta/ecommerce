@@ -48,12 +48,15 @@ class Product extends Model
 
     public function get($idproduct)
     {
+        var_dump($idproduct);
 
         $sql = new Sql();
 
         $results = $sql->select("SELECT *FROM tb_products WHERE idproduct = :idproduct", [
             ":idproduct"=> $idproduct
         ]);
+
+        var_dump($results);
         $this->setData($results[0]);
     }
 
