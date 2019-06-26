@@ -6,6 +6,7 @@ use \Hcode\Mailer;
 class User extends Model {
     const SESSION = "User";
     const SECRET = "HcodePhp7_Secret";
+    const SECRET_IV = "HcodePhp7_Secret_IV";
     const ERROR = "UserError";
     const ERROR_REGISTER = "UserErrorRegister";
     public static function getFromSession()
@@ -142,6 +143,7 @@ class User extends Model {
         else
         {
             $data = $results[0];
+
             $results2 = $sql->select("CALL sp_userspasswordsrecoveries_create(:iduser, :desip)", array(
                 ":iduser"=>$data["iduser"],
                 ":desip"=>$_SERVER["REMOTE_ADDR"]
@@ -153,7 +155,11 @@ class User extends Model {
             else
             {
                 $dataRecovery = $results2[0];
-                $code = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_128, User::SECRET, $dataRecovery["idrecovery"], MCRYPT_MODE_ECB));
+
+                $code = openssl_encrypt($dataRecovery['idrecovery'], 'AES-128-CBC', pack("a16", User::SECRET), 0, pack("a16", User::SECRET_IV));
+
+                $code = base64_encode($code);
+
                 if ($inadmin) {
                     $link = "http://www.hcodecommerce.com.br/admin/forgot/reset?code=$code";
                 } else {
