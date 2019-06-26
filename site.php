@@ -168,7 +168,20 @@ $app->post("/checkout", function()
         exit;
     }
 
+    $user = User::getFromSession();
+
     $address = new Address();
+
+    $_POST['deszipcode'] = $_POST['zipcode'];
+
+    $_POST['idperson'] = $user->getidperson();
+
+    $address->setData($_POST);
+
+    $address->save();
+
+    header("Location: /order");
+    exit;
 
 });
 
