@@ -1,7 +1,6 @@
 <?php
 
 use Hcode\Model\User;
-
 use Hcode\PageAdmin;
 
 $app->get("/admin/users/:iduser/password", function($iduser)
@@ -20,11 +19,13 @@ $app->get("/admin/users/:iduser/password", function($iduser)
         "msgSuccess"=>User::getSuccess()
 
     ]);
+
 });
 
 $app->post("/admin/users/:iduser/password", function($iduser)
 {
     User::verifyLogin();
+
 
     if (!isset($_POST['despassword']) || $_POST['despassword'] === ''){
 
@@ -54,6 +55,7 @@ $app->post("/admin/users/:iduser/password", function($iduser)
     $user->setPassword(User::getPasswordHash($_POST['despassword']));
 
     User::setSuccess("Senha alterada com sucesso.");
+
     header("Location: /admin/users/$iduser/password");
     exit;
 
