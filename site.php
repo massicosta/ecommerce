@@ -99,7 +99,7 @@ $app->get("/checkout", function(){
         $_GET['zipcode'] = $cart->getdeszipcode();
     }
 
-    if(isset($_GET['zipcode'])){
+    if(!isset($_GET['zipcode'])){
 
         $address->loadFromCEP($_GET['zipcode']);
 
@@ -112,6 +112,7 @@ $app->get("/checkout", function(){
     }
 
     if(!$address->getdesaddress()) $address->setdesaddress('');
+    if(!$address->getdesnumber()) $address->setdesnumber('');
     if(!$address->getdescomplement()) $address->setdescomplement('');
     if(!$address->getdesdistrict()) $address->setdesdistrict('');
     if(!$address->getdescity()) $address->setdescity('');
